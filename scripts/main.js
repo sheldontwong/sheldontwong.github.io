@@ -8,7 +8,7 @@ myImage.onclick = () => {
   if (mySrc === "images/logo.svg") {
     myImage.setAttribute("src", "images/penguin.svg");
   } else {
-    myImage.setAttribute("src", "images/logo.svg");
+    myImage.setAttribute("src", "images/mypic.JPG");
   }
 };
 
@@ -17,12 +17,12 @@ myButton.onclick = () => {
 };
 
 function setUserName() {
-  const myName = prompt("Please enter your name.");
+  const myName = prompt("What's your name?");
   if (!myName) {
     setUserName();
   } else {
     localStorage.setItem("name", myName);
-    myHeading.textContent = `Mozilla is cool, ${myName}`;
+    myHeading.textContent = `Hi ${myName},`;
   }
 }
 
@@ -30,7 +30,7 @@ if (!localStorage.getItem("name")) {
   setUserName();
 } else {
   const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Mozilla is cool, ${storedName}`;
+  myHeading.textContent = `Why change your name, ${storedName}`;
 }
 
 
