@@ -5,7 +5,7 @@ let myHeading = document.querySelector("h1");
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
   const mySrc2 = myImage.getAttribute("src2");
-  if (mySrc === "images/logo.svg") {
+  if (mySrc === "images/mypic.JPG") {
     myImage.setAttribute("src", "images/penguin.svg");
   } else {
     myImage.setAttribute("src", "images/mypic.JPG");
