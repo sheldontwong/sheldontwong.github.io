@@ -14,6 +14,7 @@ myImage.onclick = () => {
 
 myButton.onclick = () => {
   setUserName();
+  myHeading.textContent = `Why change your name?  ${myName},`;
 };
 
 function setUserName() {
@@ -30,7 +31,7 @@ if (!localStorage.getItem("name")) {
   setUserName();
 } else {
   const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Why change your name, ${storedName}`;
+  myHeading.textContent = `Hi ${storedName},`;
 }
 
 
